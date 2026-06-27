@@ -6,15 +6,7 @@ export default defineConfig({
   site: 'https://notionfreelancer.com',
   integrations: [
     mdx(),
-    sitemap({
-      i18n: {
-        defaultLocale: 'es',
-        locales: {
-          es: 'es-ES',
-          en: 'en-US',
-        },
-      },
-    }),
+    sitemap(),
   ],
   i18n: {
     defaultLocale: 'es',
