@@ -1,0 +1,3 @@
+# Cloudflare Pages redirects
+# Root redirect to default locale
+/   /es   302

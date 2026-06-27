@@ -1,0 +1,49 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Sobre mí"
+  description="Soy Zori, desarrollador freelance y creador de plantillas de Notion para freelancers que quieren organizarse mejor."
+>
+  <div class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">Sobre mí</h1>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container--narrow prose">
+      <p>
+        Hola, soy Zori. Desarrollador PHP/Laravel de profesión y freelance de experiencia.
+        Como cualquier freelance, llegó un momento en que el caos de gestionar clientes, proyectos y facturas
+        en Excel o en notas dispersas se volvió insostenible.
+      </p>
+      <p>
+        Descubrí Notion y empecé a construir mis propios sistemas. Con el tiempo, esos sistemas se volvieron
+        tan útiles que decidí compartirlos — y venderlos.
+      </p>
+      <p>
+        Las plantillas que encontrarás aquí no son las típicas de diseñador que se ven bonitas pero tienen
+        cero lógica detrás. Están construidas por un desarrollador, con bases de datos relacionadas,
+        fórmulas avanzadas y pensando en cómo funciona realmente el día a día de un freelance técnico.
+      </p>
+      <h2>Este blog</h2>
+      <p>
+        Aquí publico guías prácticas sobre cómo organizarse mejor como freelance: gestión de clientes,
+        control de proyectos, facturación, y cómo sacarle partido a Notion sin perder tiempo configurando cosas.
+      </p>
+      <p>
+        Si quieres estar al tanto de los nuevos templates y artículos, vuelve pronto — o sígueme en
+        las redes que esté usando.
+      </p>
+      <a href="/es/templates/" class="btn btn--primary">Ver los templates</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-header { padding: 3.5rem 0 2.5rem; background: var(--color-surface); border-bottom: 1px solid var(--color-border); }
+  .page-header__title { font-size: 2.25rem; font-weight: 800; }
+  .section { padding: 3rem 0 5rem; }
+</style>

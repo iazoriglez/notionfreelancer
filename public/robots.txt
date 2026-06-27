@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://notionfreelancer.com/sitemap-index.xml

@@ -1,0 +1,89 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+
+const templates = [
+  {
+    title: 'Freelance CRM Pro',
+    description: 'Manage clients, projects, invoices and interactions from a single workspace. With advanced formulas that automatically calculate pending balances, billing percentages and days remaining per project.',
+    price: '€19',
+    url: 'https://6328908678179.gumroad.com/l/freelance-crm-pro',
+    tags: ['CRM', 'Clients', 'Invoices', 'Projects'],
+    features: [
+      '4 relational databases (Clients, Projects, Invoices, Interactions)',
+      'Advanced formulas: pending balance, % billed, days remaining',
+      'Client pipeline Kanban board',
+      'Main dashboard with key metrics',
+      'Deadlines and payments calendar',
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="Notion Templates for Freelancers"
+  description="Notion templates with advanced formulas and relational databases to organize your freelance business."
+>
+  <div class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">Notion Templates</h1>
+      <p class="page-header__subtitle">
+        Systems built with advanced formulas and relational databases.
+        Not basic templates — designed by a developer.
+      </p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="templates-grid">
+        {templates.map(template => (
+          <article class="template-card">
+            <div class="template-card__header">
+              <div>
+                <h2 class="template-card__title">{template.title}</h2>
+                <div class="template-card__tags">
+                  {template.tags.map(tag => <span class="tag">{tag}</span>)}
+                </div>
+              </div>
+              <div class="template-card__price">{template.price}</div>
+            </div>
+            <p class="template-card__description">{template.description}</p>
+            <ul class="template-card__features">
+              {template.features.map(f => <li>{f}</li>)}
+            </ul>
+            <a href={template.url} class="btn btn--primary template-card__cta" target="_blank" rel="noopener">
+              Get template →
+            </a>
+          </article>
+        ))}
+      </div>
+
+      <div class="coming-soon">
+        <h2>Coming soon</h2>
+        <p>More templates in development: Invoice & Finance Tracker, Client Portal, Time Tracker.</p>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-header { padding: 3.5rem 0 2.5rem; background: var(--color-surface); border-bottom: 1px solid var(--color-border); }
+  .page-header__title { font-size: 2.25rem; font-weight: 800; margin-bottom: 0.5rem; }
+  .page-header__subtitle { font-size: 1.0625rem; color: var(--color-muted); max-width: 600px; }
+  .section { padding: 3rem 0 5rem; }
+  .templates-grid { display: grid; gap: 2rem; }
+
+  .template-card { border: 1px solid var(--color-border); border-radius: calc(var(--radius) * 2); padding: 2rem; }
+  .template-card__header { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: 1rem; }
+  .template-card__title { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+  .template-card__tags { display: flex; gap: 0.4rem; flex-wrap: wrap; }
+  .template-card__price { font-size: 2rem; font-weight: 800; color: var(--color-accent); white-space: nowrap; }
+  .template-card__description { color: var(--color-muted); line-height: 1.7; margin-bottom: 1.5rem; }
+  .template-card__features { list-style: none; margin-bottom: 2rem; display: grid; gap: 0.5rem; }
+  .template-card__features li { display: flex; gap: 0.5rem; font-size: 0.9375rem; }
+  .template-card__features li::before { content: '✓'; color: var(--color-accent); font-weight: 700; flex-shrink: 0; }
+
+  .coming-soon { margin-top: 4rem; padding: 2rem; background: var(--color-surface); border-radius: calc(var(--radius) * 1.5); border: 1px dashed var(--color-border); }
+  .coming-soon h2 { font-size: 1.125rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--color-muted); }
+  .coming-soon p { color: var(--color-muted); }
+</style>

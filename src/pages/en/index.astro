@@ -1,0 +1,85 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import PostCard from '@/components/PostCard.astro';
+import { getCollection } from 'astro:content';
+import { useTranslations } from '@/i18n/utils';
+
+const t = useTranslations('en');
+const allPosts = (await getCollection('blog-en'))
+  .filter(p => !p.data.draft)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+  .slice(0, 3);
+---
+
+<BaseLayout
+  title="Organize your freelance business with Notion"
+  description="Notion templates and guides for freelancers who want to work with clarity, not chaos."
+>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <p class="hero__kicker">For organized freelancers</p>
+      <h1 class="hero__title">{t('home.hero.title')}</h1>
+      <p class="hero__subtitle">{t('home.hero.subtitle')}</p>
+      <div class="hero__actions">
+        <a href="/en/templates/" class="btn btn--primary">{t('home.hero.cta')}</a>
+        <a href="/en/blog/" class="btn btn--outline">Read the blog</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest posts -->
+  {allPosts.length > 0 && (
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <h2 class="section__title">{t('home.blog.title')}</h2>
+          <a href="/en/blog/" class="section__link">{t('home.blog.cta')} →</a>
+        </div>
+        <div class="grid grid--3">
+          {allPosts.map(post => <PostCard post={post} lang="en" />)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <!-- Templates CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2 class="cta-banner__title">Freelance CRM Pro</h2>
+      <p class="cta-banner__text">
+        Manage clients, projects and invoices from a single Notion workspace.
+        With formulas that automatically calculate pending balances, percentages and deadlines.
+      </p>
+      <a href="https://6328908678179.gumroad.com/l/freelance-crm-pro" class="btn btn--primary" target="_blank" rel="noopener">
+        Get it for €19 →
+      </a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero { padding: 5rem 0; text-align: center; background: linear-gradient(135deg, #faf5ff 0%, #f0f9ff 100%); }
+  .hero__kicker { font-size: 0.875rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--color-accent); margin-bottom: 1rem; }
+  .hero__title { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; line-height: 1.15; max-width: 700px; margin: 0 auto 1.25rem; }
+  .hero__subtitle { font-size: 1.125rem; color: var(--color-muted); max-width: 560px; margin: 0 auto 2rem; line-height: 1.7; }
+  .hero__actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+  .section { padding: 4rem 0; }
+  .section__header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; }
+  .section__title { font-size: 1.5rem; font-weight: 700; }
+  .section__link { font-size: 0.9375rem; font-weight: 600; color: var(--color-accent); text-decoration: none; }
+  .section__link:hover { text-decoration: underline; }
+
+  .grid { display: grid; gap: 1.5rem; }
+  .grid--3 { grid-template-columns: repeat(3, 1fr); }
+
+  .cta-banner { background: var(--color-accent); color: white; padding: 4rem 0; text-align: center; }
+  .cta-banner__title { font-size: 2rem; font-weight: 800; margin-bottom: 1rem; }
+  .cta-banner__text { font-size: 1.0625rem; opacity: 0.9; max-width: 560px; margin: 0 auto 2rem; line-height: 1.7; }
+  .cta-banner .btn--primary { background: white; color: var(--color-accent); }
+  .cta-banner .btn--primary:hover { background: var(--color-accent-light); }
+
+  @media (max-width: 900px) { .grid--3 { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 600px) { .grid--3 { grid-template-columns: 1fr; } .section__header { flex-direction: column; align-items: flex-start; gap: 0.5rem; } }
+</style>

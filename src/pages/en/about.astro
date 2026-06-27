@@ -1,0 +1,45 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="About"
+  description="I'm Zori, a freelance developer and creator of Notion templates for freelancers who want to get better organized."
+>
+  <div class="page-header">
+    <div class="container">
+      <h1 class="page-header__title">About</h1>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container--narrow prose">
+      <p>
+        Hi, I'm Zori. PHP/Laravel developer by trade, freelancer by experience.
+        Like any freelancer, there came a point when managing clients, projects and invoices
+        in Excel or scattered notes became unsustainable.
+      </p>
+      <p>
+        I discovered Notion and started building my own systems. Over time, those systems became
+        so useful that I decided to share them — and sell them.
+      </p>
+      <p>
+        The templates you'll find here are not the typical designer-made ones that look pretty
+        but have zero logic behind them. They're built by a developer, with relational databases,
+        advanced formulas, and with a real understanding of how a technical freelancer's day-to-day actually works.
+      </p>
+      <h2>This blog</h2>
+      <p>
+        Here I publish practical guides on how to get better organized as a freelancer: client management,
+        project tracking, invoicing, and how to make the most of Notion without spending hours on configuration.
+      </p>
+      <a href="/en/templates/" class="btn btn--primary">See the templates</a>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .page-header { padding: 3.5rem 0 2.5rem; background: var(--color-surface); border-bottom: 1px solid var(--color-border); }
+  .page-header__title { font-size: 2.25rem; font-weight: 800; }
+  .section { padding: 3rem 0 5rem; }
+</style>
