@@ -5,3 +5,7 @@ node_modules/
 !.env.example
 .DS_Store
 .astro/
+
+# Borradores internos (no publicar en el repo)
+_drafts/
+publicar.bat
