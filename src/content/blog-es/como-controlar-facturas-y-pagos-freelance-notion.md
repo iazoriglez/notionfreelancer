@@ -60,6 +60,10 @@ Lo tienes listo en un minuto.
 
 [→ Ver el Freelance CRM Pro en Gumroad](https://6328908678179.gumroad.com/l/freelance-crm-pro)
 
+Y si lo que te falta no es saber quién te debe qué, sino la parte de Hacienda —cuánto IVA e IRPF te toca declarar cada trimestre—, eso ya no lo resuelve un CRM. Para eso está el **Freelance Finance Tracker**: calcula automáticamente tu IVA e IRPF por factura y te deja el resumen trimestral listo para el Modelo 303.
+
+[→ Ver el Freelance Finance Tracker en Gumroad](https://6328908678179.gumroad.com/l/freelance-finance-tracker-es)
+
 ---
 
 ¿Cuánto tiempo tardas ahora mismo en saber cuánto te deben en total? Si la respuesta es "más de 10 segundos", tienes margen de mejora.

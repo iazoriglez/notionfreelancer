@@ -60,6 +60,10 @@ Ready to use in one minute.
 
 [→ Get Freelance CRM Pro on Gumroad](https://6328908678179.gumroad.com/l/freelance-crm-pro)
 
+And if what you're missing isn't knowing who owes you what, but the tax side — how much VAT and income tax you owe each quarter — a CRM won't solve that. That's what the **Freelance Finance Tracker** is for: it automatically calculates VAT and tax per invoice and gives you a quarterly summary ready to file.
+
+[→ Get the Freelance Finance Tracker on Gumroad](https://6328908678179.gumroad.com/l/freelance-finance-tracker)
+
 ---
 
 How long does it take you right now to know exactly how much you're owed? If the answer is "more than 10 seconds," there's room for improvement.

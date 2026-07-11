@@ -35,17 +35,23 @@ Plus, you can switch the view of that same information: as a table, Kanban cards
 
 ## The practical conclusion
 
-For **financial calculations, tax returns, accounting**: use Excel or your accounting software.
+For **complex financial projections or modeling large volumes of data**: use Excel.
 
 For **managing clients, projects, invoices, follow-ups, and the day-to-day of your business**: Notion is better.
+
+What about quarterly VAT and income tax? People usually assume that means going back to Excel too, but it doesn't have to: with the right database structure, Notion can calculate exactly what you owe each quarter, invoice by invoice.
 
 Most freelancers who try Notion for their management don't go back to Excel for that purpose. Not because Excel is bad, but because Notion is designed for exactly that use case.
 
 ## If you want to start with Notion without building from scratch
 
-**Freelance CRM Pro** gives you the complete structure already built: clients, projects, invoices, and interactions — all related and with the necessary formulas already configured.
+For clients, projects and invoices: **Freelance CRM Pro** gives you the complete structure already built, with the necessary formulas already configured.
+
+For income, expenses, VAT and taxes: **Freelance Finance Tracker** automatically calculates what you owe each quarter.
 
 [→ Get Freelance CRM Pro on Gumroad](https://6328908678179.gumroad.com/l/freelance-crm-pro)
+
+[→ Get the Freelance Finance Tracker on Gumroad](https://6328908678179.gumroad.com/l/freelance-finance-tracker)
 
 ---
 

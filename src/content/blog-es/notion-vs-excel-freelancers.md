@@ -35,17 +35,23 @@ Además, puedes cambiar la vista de esa misma información: como tabla, como tar
 
 ## La conclusión práctica
 
-Para **cálculos financieros, declaraciones de IVA, contabilidad**: usa Excel o tu software de contabilidad.
+Para **proyecciones financieras complejas o modelado de datos con grandes volúmenes**: usa Excel.
 
 Para **gestionar clientes, proyectos, facturas, seguimientos y el día a día de tu negocio**: Notion es mejor.
+
+¿Y el IVA y el IRPF trimestral? Ahí también se suele dar por hecho que toca volver a Excel, pero no es así: con la estructura de bases de datos correcta, Notion calcula solo lo que le corresponde a Hacienda cada trimestre, factura a factura.
 
 La mayoría de freelancers que prueba Notion para su gestión no vuelve a Excel para eso. No porque Excel sea malo, sino porque Notion está diseñado para exactamente ese caso de uso.
 
 ## Si quieres empezar con Notion sin partir de cero
 
-El **Freelance CRM Pro** te da la estructura completa ya montada: clientes, proyectos, facturas e interacciones, todos relacionados y con las fórmulas necesarias ya configuradas.
+Para clientes, proyectos y facturas: el **Freelance CRM Pro** te da la estructura completa ya montada, con las fórmulas necesarias ya configuradas.
+
+Para ingresos, gastos, IVA e IRPF: el **Freelance Finance Tracker** calcula automáticamente lo que le corresponde a Hacienda cada trimestre.
 
 [→ Ver el Freelance CRM Pro en Gumroad](https://6328908678179.gumroad.com/l/freelance-crm-pro)
+
+[→ Ver el Freelance Finance Tracker en Gumroad](https://6328908678179.gumroad.com/l/freelance-finance-tracker-es)
 
 ---
 
